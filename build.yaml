@@ -12,14 +12,14 @@
 #     shield: reviung41
 #
 ---
-include:
-  - board: nice_nano_v2
-    shield: hshs52_left nice_view_adapter nice_view
-  - board: nice_nano_v2
-    shield: hshs52_right nice_view_adapter nice_view
-  - board: nice_nano_v2
-    shield: hshs46_left nice_view_adapter nice_view
-  - board: nice_nano_v2
-    shield: hshs46_right nice_view_adapter nice_view
-  - board: nice_nano_v2
-    shield: settings_reset
+  include:
+    - board: nice_nano/nrf52840/zmk
+      shield: hshs52_left nice_view_adapter nice_view
+    - board: nice_nano/nrf52840/zmk
+      shield: hshs52_right nice_view_adapter nice_view
+    - board: nice_nano/nrf52840/zmk
+      shield: hshs46_left nice_view_adapter nice_view
+    - board: nice_nano/nrf52840/zmk
+      shield: hshs46_right nice_view_adapter nice_view
+    - board: nice_nano/nrf52840/zmk
+      shield: settings_reset
