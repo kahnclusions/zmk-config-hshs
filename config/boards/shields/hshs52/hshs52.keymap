@@ -55,8 +55,8 @@
                         bindings = <
 &kp  Copy     &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6      &kp  N7      &kp   N8      &kp   N9      &kp  N0       &trans
 &kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste                                                                     &kp   LEFT    &kp  DOWN    &kp   UP      &kp   RIGHT   &kp  PG_UP    &kp PG_DN
-&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &trans
-&kp  F11      &kp  F12      &trans                      &trans        &trans        &trans        &trans                 &trans        &trans        &mo   ADJ_L   &trans                     &kp  RCTRL    &kp  HOME     &kp  END
+&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  PG_UP      &trans
+&kp  F11      &kp  F12      &trans                      &trans        &trans        &trans        &trans                 &trans        &trans        &mo   ADJ_L   &trans                     &kp  HOME     &kp  PG_DN     &kp  END
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -66,14 +66,14 @@
 /* SYM
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | INS   |   !   |   @   |   #   |   $   |   %   |-----------------------------------|   ^   |   &   |   *   |   (   |   )   | DELETE|
- * | ESC   |   \   |   -   |   =   |   [   |   ]   |-----------------------------------| Vol+  | Shift | Ctrl  | Alt   | Gui   | '     |
+ * | ESC   |   \   |   -   |   =   |   [   |   ]   |-----------------------------------| -     |  =    | Ctrl  |  Alt   | Gui   | '     |
  * | Shift |   |   |   _   |   +   |   {   |   }   | Play  |-------------------| Mute  | [     |  ]    |  {    |   }   |       | ENTER |
  * |       |       |       |-------|       |       |       |  ADJ_L |---|      |       |       |       |-------| CTRL  | MENU  |SkAltGr|
  */
                         bindings = <
 &kp  GRAVE    &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp  DEL
-&kp  ESC      &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT                                                                      &kp C_VOL_UP  &kp  RSHFT    &kp  RCTRL    &kp  LALT     &kp  RGUI     &kp  GRAVE
-&trans        &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &kp  GRAVE                                          &kp C_MUTE    &kp LBKT      &kp  RBKT     &kp  LBRC     &kp  RBRC     &trans        &trans
+&kp  ESC      &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT                                                                      &kp MINUS     &kp  EQUAL    &kp  LBKT     &kp  RBKT     &kp  GRAVE    &kp  BSLH
+&trans        &kp  GRAVE    &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &kp  GRAVE                                         &kp C_MUTE    &kp LBKT      &kp  RBKT     &kp  LBRC     &kp  RBRC     &kp  SLASH    &trans
 &none         &none         &trans                      &trans        &trans        &trans        &mo  ADJ_L               &trans      &trans        &trans        &trans                      &trans        &trans        &trans
                         >;
 			
